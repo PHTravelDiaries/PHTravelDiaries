@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta name="viewport" content"width=device-width, initial-scale=1">
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+	<title>PHTravelDiaries</title>
+<style>
+* {box-sizing: border-box;}
+body {font-family: Verdana, sans-serif;}
+.mySlides {display: none;}
+img {vertical-align: middle;}
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 1500px;
+  position: relative;
+  margin: auto;
+  position: relative;
+}
+
+/* Caption text */
+.text {
+  color: #f2f2f2;
+  font-size: 50px;
+  font-family: Rockwell;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 20px;
+  width: 100%;
+  text-align: center;
+  background-color: #000000;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  height: 0px;
+  width: 0Wpx;
+  margin: 0 0px;
+  background-color: #bbb;
+  border-radius: 0%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active {
+  background-color: #000000;
+}
+
+/* Fading animation */
+.fade {
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+  .text {font-size: 11px}
+}
+	ul {
+		list-style-type: none;
+		margin-left: -9px;
+		margin-top: -10px;
+		margin-right: -9px;
+		padding: 0;
+		overflow: hidden;
+		z-index: 1;
+		background-color:#000000;
+	li {
+		float: left;
+	}
+
+	}
+	li a {
+		display: block;
+		text-align: center;
+		padding: 25px 16px;
+		text-decoration: none;
+		font-size: 16px;
+		font-family: Rockwell;
+		color:#FFFFFF;
+	}
+	a {
+		display: block;
+		text-align: center;
+		text-decoration: none;
+		font-family: Rockwell;
+		color:#FFFFFF;
+	}
+	h1 {
+		font-family:Rockwell; 
+		text-align:center; 
+		background-color:#000000; 
+		color:#FFFFFF;"
+		font-size:50px;
+		padding:0;
+		margin-top:-10px;
+.wrapper {
+	margin: 150px auto;
+	width: 70%;
+}
+.texts {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	min-height: 100vh;
+	background: #FFFFFF;
+}
+.text-box h2 {
+	font-size: 42px;
+}
+.text-box p {
+	font-size: 16px;
+}
+</style>
+</head>
+
+<body>
+
+<ul>
+<div> <img src="pics/Logo.png" style="height:57.75px;width:53.33;margin-top:3px;margin-left:575px;float:left;"> </div>
+		<li> <a class="active" href="home.html" margin-left:20px;>Home</a> </li>
+		<li> <a class="active" href="post.html">Travel Guide</a> </li>
+		<li> <a class="active" href="about.html">About</a> </li>
+</ul>
+
+<div class="slideshow-container">
+
+<div class="mySlides fade">
+  <img src="vigan/p5.png" style="width:1500px; margin-top: -15px; border:#000000 20px solid;">
+  <div class="text">Calle Crisologo</div>
+</div>
+
+<div class="mySlides fade">
+  <img src="vigan/p3.png" style="width:1500px; margin-top: -15px; border:#000000 20px solid;">
+  <div class="text">Buluarte Zoo</div>
+</div>
+
+<div class="mySlides fade">
+  <img src="vigan/p2.png" style="width:1500px; margin-top: -15px; border:#000000 20px solid;">
+  <div class="text">Paoay Church</div>
+</div>
+
+<div class="mySlides fade">
+  <img src="vigan/p4.png" style="width:1500px; margin-top: -15px; border:#000000 20px solid;">
+  <div class="text">Bangui Windmills</div>
+</div>
+
+<div class="mySlides fade">
+  <img src="vigan/p1.png" style="width:1500px; margin-top: -15px; border:#000000 20px solid;">
+  <div class="text">Panay Sand Dunes</div>
+</div>
+
+</div>
+<div style="text-align:center">
+  <span class="dot"></span> 
+  <span class="dot"></span> 
+  <span class="dot"></span> 
+  <span class="dot"></span> 
+  <span class="dot"></span> 
+  <span class="dot"></span> 
+</div>
+<script>
+let slideIndex = 0;
+showSlides();
+
+function showSlides() {
+  let i;
+  let slides = document.getElementsByClassName("mySlides");
+  let dots = document.getElementsByClassName("dot");
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";  
+  }
+  slideIndex++;
+  if (slideIndex > slides.length) {slideIndex = 1}    
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " active";
+  setTimeout(showSlides, 5000); // Change image every 2 seconds
+}
+</script>
+
+<h1>Vigan</h1>
+<br>
+<div class="texts" style="padding: 0;">
+<div class="wrapper">
+<div class="text-box">
+<img src="vigan/p5.png" style="width: 400px; float:left; border:3px solid #000000; border-radius: 10px; margin-right: 15px;">
+	<h1><a>Calle Crosologo</a></h1>
+	<p>The most popular tourist attraction that goes here is Calle Crisologo because of the beauty of the streets made of stones, and you will feel like you are in ancient times because of the ambiance of the place and the carriages. There are a lot of aesthetic and Instagram-worthy spots for taking pictures. On this street, there are many sellers of souvenirs and street foods, such as empanadas, which are famous here because of their vibrant orange wrappers. The streets here are even more beautiful at night because of the streetlights. Also, one of the beautiful lights every night is the Plaza Salcedo because it has a full-dancing fountain with exciting music that lasts for more than 10 minutes. </p>
+<br>
+<br>
+<br>
+<img src="vigan/p3.png" style="width: 400px; float:left; border:3px solid #000000; border-radius: 10px; margin-right: 15px; margin-top:-10px;">
+	<h1><a>Buluarte Zoo</a></h1>
+	<p>If you love animals, the Baluarte Zoo is a good place to visit because there are endemic animals and a museum here with preserved animals. This zoo is animal-friendly but not a large-budget sort of place. Many of the animals are allowed to roam freely in the stroll areas alongside the people, so do not anticipate any lavish displays or animal pens. There is no entrance fee. Your only expenditures should be for eating and any additional activities you are interested in, like seeing a sea lion performance.</p>
+<br>
+<br>
+<br>
+<br>
+<br>
+<img src="vigan/p2.png" style="width: 400px; float:left; border:3px solid #000000; border-radius: 10px; margin-right: 15px; margin-top:-10px;">
+	<h1><a>Paoay Church</a></h1>
+	<p>One of the ancient stone cathedrals here is the Paoay Church, also known as San Agustin Church. An amazing photo opportunity is this massive, ancient Catholic church, which creates a sense of the past.</p>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<img src="vigan/p4.png" style="width: 400px; float:left; border:3px solid #000000; border-radius: 10px; margin-right: 15px; margin-top:-10px;">
+	<h1><a>Bangui Windmills</a></h1>
+	<p>For a view of the sea and rocks, the Bangui Windmills and Kapurpurawan Rock Formation are the tourist destinations you can visit. The Bangui Windmills stand tall at the beach, and it is a good place to watch the sunset. Kapurpurawan Rock Formation is a beachside natural structure that protrudes from the rock. The Ilocano word "puraw," which means "white," is where the name originated. You can ride a horse to go there, and the tour guides will offer to take your photos and guide you to posing.</p>
+<br>
+<br>
+<br>
+<br>
+<br>
+<img src="vigan/p1.png" style="width: 400px; float:left; border:3px solid #000000; border-radius: 10px; margin-right: 15px; margin-top:-10px;">
+	<h1><a>Panay Sand Dunes</a></h1>
+	<p>The Paoay Sand Dunes, the natural coastal desert formed by wind and sea, known as the dunes of La Paz and Paoay, are located close to Laoag City. It's the ideal location for a thrilling 4x4 trip and sandboarding due to its curves and occasionally steep hills. If you want to ride your 4x4 into the sunset and escape the worst part of the sun, the afternoon is the ideal time to explore the dunes. Aside from the 4x4 trip, you can also experience sandboarding. You can sit or stand on the board while going down the sandy slopes.</p>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+</div>
+</div>
+</div>
+<h1>Eirin Mae Oruga's trip to Vigan</h1>
+<a style="color:black; text-align:justify; font-family:Rockwell;">One of the most visited places in the Philippines is Vigan City because of its beauty and the unique and ancient houses and buildings here. It is a good place to visit because many tourist spots can be visited or seen.
+The most popular tourist attraction that goes here is Calle Crisologo because of the beauty of the streets made of stones, and you will feel like you are in ancient times because of the ambiance of the place and the carriages. There are a lot of aesthetic and Instagram-worthy spots for taking pictures. On this street, there are many sellers of souvenirs and street foods, such as empanadas, which are famous here because of their vibrant orange wrappers. The streets here are even more beautiful at night because of the streetlights. Also, one of the beautiful lights every night is the Plaza Salcedo because it has a full-dancing fountain with exciting music that lasts for more than 10 minutes. 
+If you love animals, the Baluarte Zoo is a good place to visit because there are endemic animals and a museum here with preserved animals. This zoo is animal-friendly but not a large-budget sort of place. Many of the animals are allowed to roam freely in the stroll areas alongside the people, so do not anticipate any lavish displays or animal pens. There is no entrance fee. Your only expenditures should be for eating and any additional activities you are interested in, like seeing a sea lion performance.
+The outing is more enjoyable if there are outdoor activities. There are many in Laoag. Everybody's travel bucket list in the Philippines should include visiting Laoag, the gem of Ilocos Norte. It has magnificent dunes along the coast of Ilocos, breathtakingly beautiful natural rock formations, and ancient stone cathedrals.
+One of the ancient stone cathedrals here is the Paoay Church, also known as San Agustin Church. An amazing photo opportunity is this massive, ancient Catholic church, which creates a sense of the past.
+The Paoay Sand Dunes, the natural coastal desert formed by wind and sea, known as the dunes of La Paz and Paoay, are located close to Laoag City. It's the ideal location for a thrilling 4x4 trip and sandboarding due to its curves and occasionally steep hills. If you want to ride your 4x4 into the sunset and escape the worst part of the sun, the afternoon is the ideal time to explore the dunes. Aside from the 4x4 trip, you can also experience sandboarding. You can sit or stand on the board while going down the sandy slopes.
+For a view of the sea and rocks, the Bangui Windmills and Kapurpurawan Rock Formation are the tourist destinations you can visit. The Bangui Windmills stand tall at the beach, and it is a good place to watch the sunset. Kapurpurawan Rock Formation is a beachside natural structure that protrudes from the rock. The Ilocano word "puraw," which means "white," is where the name originated. You can ride a horse to go there, and the tour guides will offer to take your photos and guide you to posing.
+And let us not forget about the cuisine! Ilocos is renowned for its delicious cuisine, which includes the delicious longganisa, bagnet, and savory empanadas. There is also Poqui poqui, which is very interesting if you are not familiar with it; it is made with grilled eggplant with onion, garlic, tomatoes, and eggs. A flavor of the city's culinary history may be found in every meal.
+
+
+</a>
+<div class="footer" style="height: 100px; background-color: #000000; margin-left: -9px; margin-top: -px; padding:0; z-index:100; ">
+						<div class="copy" style="margin-left:30px; color:white; font-size: 16px; font-family: Arial; margin-left: 150px; padding-top:43px;"> &copy; Copyright 2024. PHTravelDiaries </div>
+						<div><a href="https://web.facebook.com/eirinmae.f.oruga"><img src="Pics/Photo.png" style="margin-left: -200px;margin-top:-60px;"> </a> </div>
+						<div style="width: 240px;margin-left:1000px;margin-top:-90px; color: #FFFFFF;"><p> <strong>
+							Address :</strong></p>
+							<p style="font-size: 10px;">Km.54 National Highway, Makiling, City of Calamba, Laguna 4027.</p></div>
+							
+			</div>
+			<div style="width: 1381px"><a href="about.html" class="style1" style="margin-left:1250px;margin-top:-30px;display:block;"> 
+								See More&gt;&gt;&gt;</a></div>
+</body>
+</html>
